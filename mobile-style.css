@@ -142,12 +142,13 @@ body {
 }
 
 #minimizeButton {
-  color: black;
+  background-color: black;
+  color: white;
   width: 10px;
   height: 15px;
   padding: 0px;
   line-height: 10px;
-  opacity: 0.5;
+  opacity: 1;
   cursor: pointer;
   right: 30px;
   top: 30px;
