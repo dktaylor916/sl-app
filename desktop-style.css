@@ -1,0 +1,140 @@
+.text-box {
+  position: fixed;
+  width: 30%;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  opacity: 0.9;
+  background-color: beige;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: Futura;
+  color: black;
+  font-size: 1.04vw;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+
+text {
+  font-family: Futura;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.map-overlay svg {
+  background-color: transparent;
+  display: inline-block;
+  width: 350px;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+#arc-slider {
+  height: 110px !important;
+  width: 500px !important;
+  border: 1px dashed;
+  overflow: hidden;
+  padding: 15px;
+}
+#arc-slider .rs-container {
+  margin-left: -350px; /* here 300 is the radius value */
+  left: 50%;
+}
+#arc-slider .rs-tooltip {
+  top: 60px;
+}
+#arc-slider .rs-tooltip-text {
+  font-size: 25px;
+}
+#arc-slider .rs-border {
+  border-width: 0px;
+}
+/* Appearance related changes */
+.rs-control .rs-range-color {
+  background-color: #54bbe0;
+}
+.rs-control .rs-path-color {
+  background-color: #5f5f5f;
+}
+.rs-control .rs-handle {
+  background-color: #51c5cf;
+}
+#legend {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.legend-gradient {
+  height: 15px;
+  width: 150px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 255, 0),
+    #1f64dc,
+    #6cc9ee,
+    #c7ba68,
+    #ef702e,
+    #721c95
+  );
+}
+
+.legend-labels {
+  font-family: Futura;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: px;
+}
+
+.legend-title {
+  font-size: 10px;
+  font-family: Futura;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.legend-min,
+.legend-max {
+  font-size: 10px;
+}
+.no-highlight {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-text-select: none;
+  -webkit-user-select: none;
+}
+#text {
+  height: auto;
+  visibility: visible;
+}
+#text.minimized {
+  height: 0;
+  visibility: hidden;
+}
+#title {
+  height: auto;
+  visibility: visible;
+}
+
+#minimizeButton {
+  opacity: 0.5;
+  cursor: pointer;
+  right: 30px;
+  top: 30px;
+  position: absolute;
+  z-index: 100;
+}

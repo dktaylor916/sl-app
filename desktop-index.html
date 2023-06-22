@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>How do tides affect your surf?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="desktop-style.css" />
+ 
+
+</head>
+<body>
+
+  <div id="map"></div>
+ 
+  <div class="map-overlay top">
+    <svg id="slider" width="500" height="300" viewBox="20 -10 350 350">
+        <g stroke="beige">
+          <path id="track" fill="transparent" stroke-width="20" d="
+             M 50 50
+             A 125 125 0 0 0 300 50
+          "/>
+        </g>
+        
+        <use id="trackFill" xlink:href="#track" stroke="beige"/>
+        <circle id="knob" fill="lightblue" cx="50" cy="50" r="25" stroke="white" stroke-width="3"/>
+        <text id="valueText" class="no-highlight" x="150" y="130" text-anchor="middle" font-size="40" fill="white"></text>
+        <text  x="170" y="70" class="no-highlight" text-anchor="middle" font-size="50" fill="white">Tide</text>
+        <text id="valueText" class="up" x="210" y="125" text-anchor="middle" font-size="30" fill="white" opacity="0">&#8593;</text>
+        <text id="valueText" class="down" x="210" y="125" text-anchor="middle" font-size="30" fill="white" opacity="1">&#8595;</text>
+      </svg>
+  </div>
+      <div id="legend">
+      <div class="legend-title"
+       >
+       Concentration of Waves Caught
+      </div>
+        <div class="legend-gradient"></div>
+        <div class="legend-labels">
+          <span class="legend-min"></span>
+          <span class="legend-max"></span>
+        </div>
+      </div>
+      <button id="minimizeButton"></button>
+      <div class="text-box" id="textBox">
+        
+        <h2 id="title" >How do the tides affect our surf?</h2>
+       
+<div id="textContainer">
+  <p id="text">
+    We looked at over 11,000 succesful takeoffs from the past 3 years at Bantham to show you the best spot to be in the lineup. Shift the tide from high to low and rising to falling to see where the water lights up (concentration of caught waves). Zoom in to get a closer look at individual surf takeoffs, zoom out to get a more generalized view of the data.<br> Remember to find some good landmarks on the shore to pinpoint your position for your next session. <br><br>Now get out there! 
+
+  </p>
+</div>
+    
+</div>
+
+    
+</div>
+
+
+<script type="text/javascript" src="desktop-javascript.js"></script>
+
+</body>
+</html>

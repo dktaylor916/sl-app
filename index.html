@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 
+ 
+  <script>
+    // Check the user agent to determine the device type
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // Redirect to the appropriate version based on the device type
+    if (isMobile) {
+      window.location.href = 'mobile-index.html';
+    } else {
+      window.location.href = 'desktop-index.html';
+    }
+  </script>
+ 
+</head>
+
+<body>
+ 
+</body>
+
+</html>
