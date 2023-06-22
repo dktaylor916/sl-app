@@ -142,10 +142,10 @@ body {
 }
 
 #minimizeButton {
-  width: 15px;
+  width: 10px;
   height: 15px;
   padding: 0px;
-  line-height: 0px;
+  line-height: 10px;
   opacity: 0.5;
   cursor: pointer;
   right: 30px;
