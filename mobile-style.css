@@ -140,9 +140,13 @@ body {
   visibility: hidden;
   transition: height 0.3s ease, visibility 0.3s ease; /* Add transition for smooth animation */
 }
+
 #minimizeButton {
-  background-color: darkgray;
-  opacity: 0.9;
+  width: 2%;
+  height: 2%;
+  padding: 0px;
+  line-height: 0px;
+  opacity: 0.5;
   cursor: pointer;
   right: 30px;
   top: 30px;
