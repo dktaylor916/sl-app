@@ -261,6 +261,6 @@ map.on("load", function () {
     // Toggle the height of the text container
 
     textbox.style.opacity = textbox.style.opacity === "0" ? "1" : "0";
-    minimizeButton.innerHTML = textbox.style.opacity === "0" ? "o" : "x";
+    minimizeButton.innerHTML = textbox.style.opacity === "0" ? "+" : "x";
   });
 });
