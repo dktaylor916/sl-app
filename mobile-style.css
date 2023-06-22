@@ -142,8 +142,8 @@ body {
 }
 
 #minimizeButton {
-  width: 2%;
-  height: 2%;
+  width: 15px;
+  height: 15px;
   padding: 0px;
   line-height: 0px;
   opacity: 0.5;

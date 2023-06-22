@@ -155,4 +155,5 @@ map.on("load", function () {
     textbox.style.opacity = textbox.style.opacity === "0" ? "1" : "0";
     minimizeButton.innerHTML = textbox.style.opacity === "0" ? "+" : "x";
   });
+  document.getElementsByClassName("mapboxgl-ctrl-attrib-inner")[0].remove();
 });
