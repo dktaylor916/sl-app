@@ -141,6 +141,7 @@ body {
   transition: height 0.3s ease, visibility 0.3s ease; /* Add transition for smooth animation */
 }
 #minimizeButton {
+  background-color: darkgray;
   opacity: 0.9;
   cursor: pointer;
   right: 30px;
