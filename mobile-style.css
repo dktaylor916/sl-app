@@ -142,6 +142,7 @@ body {
 }
 
 #minimizeButton {
+  color: black;
   width: 10px;
   height: 15px;
   padding: 0px;
