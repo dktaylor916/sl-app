@@ -153,3 +153,6 @@ body {
   position: absolute;
   z-index: 100;
 }
+.btn-work {
+  text-align: center;
+}
