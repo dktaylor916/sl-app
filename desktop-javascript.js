@@ -118,7 +118,7 @@ map.on("load", function () {
       // Set the new filter and value for the heatmap layer
       setTimeout(function () {
         map.setFilter("heatmap-layer", ["==", "tide_ft_ro", logValue]);
-        map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.55);
+        map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.6);
       }, 100); // Delay before setting the new filter and opacity
     }
     // Update the value display
