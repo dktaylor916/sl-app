@@ -11,7 +11,7 @@ mapboxgl.accessToken =
 // Create the map
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/dktaybw/clje6d68r004001qucl7ndp7",
+  style: "mapbox://styles/dktaybw/clje6d68r004001qucl7ndp75",
   center: [-3.88291, 50.28024], // Specify the center coordinates
   zoom: 14.5, // Specify the initial zoom level
   minZoom: 8,
