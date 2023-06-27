@@ -54,7 +54,7 @@ map.on("load", function () {
         1,
         "#721C95",
       ],
-      "heatmap-opacity": 0.6,
+      "heatmap-opacity": 0.55,
       "heatmap-radius": 17,
     },
   });
@@ -77,7 +77,7 @@ map.on("load", function () {
     // Set the new filter and value for the heatmap layer
     setTimeout(function () {
       map.setFilter("heatmap-layer", ["==", "tide_ft_ro", value]);
-      map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.6);
+      map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.55);
     }, 100);
     document.getElementById("valueText").innerHTML = String(
       Math.abs(value) + "ft"
