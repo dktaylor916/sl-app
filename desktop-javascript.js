@@ -11,7 +11,7 @@ mapboxgl.accessToken =
 // Create the map
 var map = new mapboxgl.Map({
   container: "map",
-  style: "mapbox://styles/dktaybw/clj5w6x6h004101qxaxx2bb85",
+  style: "mapbox://styles/dktaybw/clje6d68r004001qucl7ndp75",
   center: [-3.88291, 50.28024], // Specify the center coordinates
   zoom: 14.5, // Specify the initial zoom level
   minZoom: 8,
@@ -118,7 +118,7 @@ map.on("load", function () {
       // Set the new filter and value for the heatmap layer
       setTimeout(function () {
         map.setFilter("heatmap-layer", ["==", "tide_ft_ro", logValue]);
-        map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.75);
+        map.setPaintProperty("heatmap-layer", "heatmap-opacity", 0.6);
       }, 100); // Delay before setting the new filter and opacity
     }
     // Update the value display
@@ -268,4 +268,21 @@ map.on("load", function () {
   document.getElementsByClassName(
     "mapboxgl-ctrl mapboxgl-ctrl-attrib mapboxgl-compact)[0].remove()"
   );
+
+  const toggleLayerButton = document.getElementById("toggleLayerButton");
+  toggleLayerButton.addEventListener("click", () => {
+    const currentOpacity = map.getPaintProperty("bath1", "raster-opacity");
+    const targetOpacity = currentOpacity === 0 ? 0.8 : 0;
+    const onoff = currentOpacity === 0 ? "Hide Bathymetry" : "Show Bathymetry";
+    map.setPaintProperty("bath1", "raster-opacity", targetOpacity);
+    map.setPaintProperty("bath1", "raster-opacity-transition", {
+      duration: 500, // Transition duration in milliseconds
+    });
+    map.setPaintProperty("bath2", "raster-opacity", targetOpacity);
+    map.setPaintProperty("bath2", "raster-opacity-transition", {
+      duration: 500, // Transition duration in milliseconds
+    });
+
+    document.getElementById("toggleLayerButton").innerHTML = onoff;
+  });
 });
